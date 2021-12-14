@@ -1,0 +1,668 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+// 기본
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url('./bg2.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+
+}
+
+// 메인
+.main {
+    margin: 0 auto;
+    box-sizing: content-box;
+    background-color: rgb(109, 80, 61);
+    position: relative;
+    width:  800px;
+    height: 100%;
+
+    // 언어버튼
+    .langbutt {
+        box-sizing: content-box;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        background-color: rgb(241, 177, 0);
+        cursor: pointer;
+        font-family: 'Dongle', sans-serif;
+        font-size: 23px;
+    }
+    // 헤더글씨
+    .mainheader {
+        background : rgb(87, 53, 32);
+        padding: 10px;
+        text-align: center;
+        margin: 0px;
+        font-size: 70px;
+        color: white;
+    }
+    .section {
+        margin: 0;
+        text-align: center;
+    }
+    // 이미지
+    .mainimg {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+    // 글씨문단
+    p {
+        padding-bottom: 20px;
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        margin: 0;
+        padding: 3%;
+    }
+    .bigbtt {
+        width: 200px;
+        height: 80px;
+        background-color: rgb(241, 177, 0);
+        color: rgb(94, 22, 22);
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        border-top: 5px solid rgb(231, 215, 126);
+        border-left: 5px solid rgb(231, 215, 126);
+        border-right: 5px solid rgb(180, 102, 0);
+        border-bottom: 5px solid rgb(180, 102, 0);
+        font-family: 'Dongle', sans-serif;
+    }
+}
+
+
+// 페이지들
+.pages {
+    margin: 0 auto;
+    box-sizing: content-box;
+    background-color: rgb(109, 80, 61);
+    position: relative;
+    width:  800px;
+    height: 100vh;
+    overflow: hidden;
+
+    .section {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .question {
+        background-color: rgb(87, 53, 32);
+        h2{
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            font-size: 50px;
+        }
+        
+        padding: 5px;
+    }
+    .answer {
+        background-color: rgb(241, 177, 0);
+        border-top: 5px solid rgb(231, 215, 126);
+        border-left: 5px solid rgb(231, 215, 126);
+        border-right: 5px solid rgb(180, 102, 0);
+        border-bottom: 5px solid rgb(180, 102, 0);
+        box-sizing: content-box;
+        font-size: 200%;
+        // font-weight: bold;
+        text-align: center;
+        width: 500px;
+        padding: 20px;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+    .pageimg {
+        height: 360px;
+        margin-left: 20%;
+        
+    }
+}
+// 결과창
+.result {
+    height: 100%;
+    margin: 0;
+
+    .reheader {
+        background : rgb(87, 53, 32);
+        padding: 10%;
+        text-align: center;
+        margin: 0px auto;
+        font-size: 50px;
+        color: white;
+        height: 100vh;
+    }
+    .bigbtt {
+        width: 200px;
+        height: 80px;
+        background-color: rgb(241, 177, 0);
+        color: rgb(94, 22, 22);
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        border-top: 5px solid rgb(231, 215, 126);
+        border-left: 5px solid rgb(231, 215, 126);
+        border-right: 5px solid rgb(180, 102, 0);
+        border-bottom: 5px solid rgb(180, 102, 0);
+        font-family: 'Dongle', sans-serif;
+    }
+}
+
+.final {
+    margin: 0 auto;
+    box-sizing: content-box;
+    background-color: rgb(122, 93, 76);
+    position: relative;
+    width:  800px;
+    height: 100%;
+    text-align: center;
+    h1 {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-size: 40px;
+        background-color: rgb(87, 53, 32);
+        margin-top: 0;
+        font-weight: lighter;
+    }
+    // 메인결과
+    .reMain {
+        height: 500px;
+    }
+    .type {
+        font-size: 60px;
+        color: white;
+        background-color: rgb(87, 53, 32);
+        padding: 20px;
+        margin-bottom: 0;
+        letter-spacing: 1rem;
+    }
+    .desc {
+        margin-top: 0;
+        background-color: rgb(173, 130, 93);
+        padding: 10%;
+        color: white;
+        font-size: 35px;
+    }
+    
+    // 친구결과
+    .section {
+        position: relative;
+        overflow: hidden;
+        color:rgb(68, 48, 4);
+        font-size: 23px;
+    }
+    .article1 {
+        float: left;
+        width: 40%;
+        margin-left: 5%;
+        .circle {
+            background-color: rgb(103, 133, 214);
+            padding: 30px;
+            border-radius: 100%;
+        }
+    }
+    .article2 {
+        float: right;
+        width: 40%;
+        margin-right: 5%;
+        .circle {
+            background-color: rgb(204, 96, 96);
+            padding: 30px;
+            border-radius: 100%;
+        }
+    }
+    .reFpp {
+        width: 200px;
+        height: 200px;
+    }
+    .frk {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+}
+// 없애기
+.off {
+    display: none;
+}
+
+// 미디어쿼리
+// 태블릿
+@media all and (min-width:768px) and (max-width:1024px) {
+    .wrap {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 0px;
+    }
+    .main {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(109, 80, 61);
+        position: relative;
+        width:  100%;
+        height: 100vh;
+        overflow: hidden;
+    
+        // 언어버튼
+        .langbutt {
+            box-sizing: content-box;
+            width: 15%;
+            height: 4%;
+            position: absolute;
+            right: 0;
+            background-color: rgb(241, 177, 0);
+            cursor: pointer;
+            font-family: 'Dongle', sans-serif;
+            font-size: 3vmax;
+        }
+        // 헤더글씨
+        .mainheader {
+            background : rgb(87, 53, 32);
+            padding: 2%;
+            text-align: center;
+            font-size: 6vmax;
+            color: white;
+        }
+        .section {
+            margin: 0;
+            text-align: center;
+        }
+        // 이미지
+        .mainimg {
+            width: 100%;
+            height: 500px;
+            margin: 0;
+        }
+        // 글씨문단
+        p {
+            color: white;
+            font-size: 5vmin;
+            text-align: center;
+            margin: 0;
+            padding: 1%;
+        }
+        .bigbtt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 9%;
+            font-size: 4vmax;
+        }
+    }
+    
+    
+    // 페이지들
+    .pages {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(109, 80, 61);
+        position: relative;
+        width:  100%;
+        height: 100vh;
+        overflow: hidden;
+    
+        .section {
+            margin: 0;
+            padding: 0px 3%;
+        }
+    
+        .question {
+            background-color: rgb(87, 53, 32);
+            h2{
+                text-align: center;
+                color: white;
+                font-weight: normal;
+                font-size: 4vmax;
+            }
+            
+            padding: 5%;
+        }
+        .answer {
+            background-color: rgb(241, 177, 0);
+            border-top: 5px solid rgb(231, 215, 126);
+            border-left: 5px solid rgb(231, 215, 126);
+            border-right: 5px solid rgb(180, 102, 0);
+            border-bottom: 5px solid rgb(180, 102, 0);
+            box-sizing: content-box;
+            font-size: 3.5vmax;
+            text-align: center;
+            width: 80%;
+            padding: 1;
+            cursor: pointer;
+            margin: 5% auto;
+        }
+        .pageimg {
+            height: 500px;
+            margin-left: 20%;
+            
+        }
+    }
+    // 결과창
+    .result {
+        height: 100%;
+        margin: 0;
+    
+        .reheader {
+            padding: 10%;
+            font-size: 5vmax;
+            height: 100vh;
+        }
+        .bigbtt {
+            width: 30%;
+            height: 10%;
+            color: rgb(94, 22, 22);
+            font-size: 4.5vmax;
+            
+        }
+    }
+    
+    .final {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(122, 93, 76);
+        position: relative;
+        width:  100%;
+        height: 100%;
+        text-align: center;
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 3%;
+            font-size: 5vmax;
+            background-color: rgb(87, 53, 32);
+            margin-top: 0;
+            font-weight: lighter;
+        }
+        // 메인결과
+        .reMain {
+            height: 100%;
+            width: auto;
+        }
+        .type {
+            font-size: 6vmax;
+            color: white;
+            background-color: rgb(87, 53, 32);
+            padding: 3%;
+            margin-bottom: 0;
+            letter-spacing: 1rem;
+        }
+        .desc {
+            margin-top: 0;
+            background-color: rgb(173, 130, 93);
+            padding: 10%;
+            color: white;
+            font-size: 50px;
+        }
+        
+        // 친구결과
+        .section {
+            position: relative;
+            overflow: hidden;
+            color:rgb(68, 48, 4);
+            font-size: 2.5vmax;
+        }
+        .article1 {
+            float: left;
+            width: 40%;
+            margin-left: 5%;
+            .circle {
+                background-color: rgb(103, 133, 214);
+                padding: 3vmax;
+                height: 50%;
+                border-radius: 100%;
+            }
+        }
+        .article2 {
+            float: right;
+            width: 40%;
+            margin-right: 5%;
+            .circle {
+                background-color: rgb(204, 96, 96);
+                padding: 3vmax;
+                height: 50%;
+                border-radius: 100%;
+            }
+        }
+        .reFpp {
+            width: 100%;
+            height: auto;
+        }
+        .frk {
+            font-weight: bold;
+            font-size: 4vmax;
+        }
+        .bigbtt {
+            width: 100%;
+            color: rgb(94, 22, 22);
+            font-size: 4.5vmax;
+            
+        }
+    }
+}
+
+// 모바일
+@media all and (max-width:767px) {
+    .wrap {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 0px;
+    }
+    .main {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(109, 80, 61);
+        position: relative;
+        width:  100%;
+        height: 100vh;
+    
+        // 언어버튼
+        .langbutt {
+            box-sizing: content-box;
+            width: 15%;
+            height: 3.5%;
+            position: absolute;
+            right: 0;
+            background-color: rgb(241, 177, 0);
+            cursor: pointer;
+            font-family: 'Dongle', sans-serif;
+            font-size: 2.5vmax;
+        }
+        // 헤더글씨
+        .mainheader {
+            background : rgb(87, 53, 32);
+            padding: 8%;
+            text-align: center;
+            font-size: 5vmax;
+            color: white;
+        }
+        .section {
+            margin: 0;
+            text-align: center;
+        }
+        // 이미지
+        .mainimg {
+            width: 100%;
+            height: 270px;
+            margin: 0;
+        }
+        // 글씨문단
+        p {
+            color: white;
+            font-size: 3.3vmax;
+            text-align: center;
+            margin: 0;
+            padding: 0%;
+        }
+        .bigbtt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 9%;
+            font-size: 4vmax;
+        }
+    }
+    
+    
+    // 페이지들
+    .pages {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(109, 80, 61);
+        position: relative;
+        width:  100%;
+        height: 100vh;
+        overflow: hidden;
+    
+        .section {
+            margin: 0;
+            padding: 0px 3%;
+        }
+    
+        .question {
+            background-color: rgb(87, 53, 32);
+            h2{
+                text-align: center;
+                color: white;
+                font-weight: normal;
+                font-size: 4vmax;
+            }
+            
+            padding: 5%;
+        }
+        .answer {
+            background-color: rgb(241, 177, 0);
+            border-top: 5px solid rgb(231, 215, 126);
+            border-left: 5px solid rgb(231, 215, 126);
+            border-right: 5px solid rgb(180, 102, 0);
+            border-bottom: 5px solid rgb(180, 102, 0);
+            box-sizing: content-box;
+            font-size: 3.5vmax;
+            text-align: center;
+            width: 80%;
+            padding: 1;
+            cursor: pointer;
+            margin: 5% auto;
+        }
+        .pageimg {
+            height: 500px;
+            margin-left: 20%;
+            
+        }
+    }
+    // 결과창
+    .result {
+        height: 100%;
+        margin: 0;
+    
+        .reheader {
+            padding: 10%;
+            font-size: 5vmax;
+            height: 100vh;
+        }
+        .bigbtt {
+            width: 200px;
+            height: 80px;
+            color: rgb(94, 22, 22);
+            font-size: 4.5vmax;
+            
+        }
+    }
+    
+    .final {
+        margin: 0 auto;
+        box-sizing: content-box;
+        background-color: rgb(122, 93, 76);
+        position: relative;
+        width:  100%;
+        height: 100%;
+        text-align: center;
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 5%;
+            font-size: 4vmax;
+            background-color: rgb(87, 53, 32);
+            margin-top: 0;
+            font-weight: lighter;
+        }
+        // 메인결과
+        .reMain {
+            height: 100%;
+            width: 100%;
+        }
+        .type {
+            font-size: 6vmax;
+            color: white;
+            background-color: rgb(87, 53, 32);
+            padding: 5%;
+            margin-bottom: 0;
+            letter-spacing: 1rem;
+        }
+        .desc {
+            margin-top: 0;
+            background-color: rgb(173, 130, 93);
+            padding: 10%;
+            color: white;
+            font-size: 35px;
+        }
+        
+        // 친구결과
+        .section {
+            position: relative;
+            overflow: hidden;
+            color:rgb(68, 48, 4);
+            font-size: 2.5vmax;
+        }
+        .article1 {
+            float: left;
+            width: 40%;
+            margin-left: 5%;
+            .circle {
+                background-color: rgb(103, 133, 214);
+                padding: 3vmax;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .article2 {
+            float: right;
+            width: 40%;
+            margin-right: 5%;
+            .circle {
+                background-color: rgb(204, 96, 96);
+                padding: 3vmax;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .reFpp {
+            width: 100%;
+            height: auto;
+        }
+        .frk {
+            font-weight: bold;
+            font-size: 4vmax;
+        }
+        .bigbtt {
+            width: 100%;
+            color: rgb(94, 22, 22);
+            font-size: 4.5vmax;
+            
+        }
+    }
+}
